@@ -48,9 +48,8 @@
                             <ul class="products product-thumb-info-list" data-plugin-masonry>
                                 <%
                                     try {
-                                        /**
-                                         * *insert code here**
-                                         */
+                                        if(furnitures != null)
+                                        for(int i =0; i < furnitures.size(); i++){
                                 %>
                                 <li class="col-md-3 col-sm-6 col-xs-12 product">
                                     <span class="product-thumb-info">
@@ -87,6 +86,7 @@
                                     </span>
                                 </li>
                                 <%
+                                    }
                                     } catch (Exception ex) {
                                         System.out.println(ex);
                                         ex.printStackTrace();
